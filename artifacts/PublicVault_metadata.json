@@ -11,47 +11,73 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "string",
+						"indexed": true,
+						"internalType": "address",
+						"name": "depositor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "DepositMade",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "DepositReclaimed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "withdrawer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawal",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
 						"name": "password",
-						"type": "string"
+						"type": "bytes32"
 					}
 				],
 				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "expirationTime",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getDepositInfo",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -77,14 +103,40 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes32",
+						"name": "newPasswordHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "resetPassword",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "showBalance",
+				"outputs": [
+					{
 						"internalType": "uint256",
-						"name": "newExpirationTime",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "setExpirationTime",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "showHashedPassword",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -114,7 +166,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Vault.sol": "PublicVault"
+			"VaultFinal.sol": "PublicVault"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -128,12 +180,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Vault.sol": {
-			"keccak256": "0x3ffa6f60ff603825f66b03db6120aad2c3279406704762e45f8559ad04ef8c5f",
+		"VaultFinal.sol": {
+			"keccak256": "0x438f17c7c1dd59258c91cd5c7eee470dea48f5ea87adbc12bfa4df77ca1aac02",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dee04ca5330e0d52636025ac8457ad82e32d6f45aa9283e2595d03d264ae0f80",
-				"dweb:/ipfs/QmPgbL4idfgvWYBurQztARRAP14jPdnNtVbr9jN5g8qaBf"
+				"bzz-raw://d31f6adf4e9de029342339583154cbdccc261034b5618f10380347900b20cad9",
+				"dweb:/ipfs/QmTsm6Hdwc3kjHLUX3CShved8u3gQw6YtG9pHoYVtcx8Tc"
 			]
 		}
 	},

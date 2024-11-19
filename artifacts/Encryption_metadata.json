@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "password",
+						"type": "string"
+					}
+				],
+				"name": "encrypt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "input",
+						"type": "bytes32"
+					}
+				],
+				"name": "isEqualToString",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "showHashedPassword",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TestingEncryption.sol": "Encryption"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TestingEncryption.sol": {
+			"keccak256": "0x9cb16eef6d34f2bb5c22108a7c5b3e639c8e5d443d0daf3fc04d57f7caa5b9b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6700d4f9249e890bea236869a29e7d685c1aea4d2eb858c9afb2502a78abd071",
+				"dweb:/ipfs/Qmb8skqR9nh3r5WX5tkmu7pHrp2FWHeNJLKd8UfFmq9qxf"
+			]
+		}
+	},
+	"version": 1
+}
