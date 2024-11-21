@@ -56,8 +56,4 @@ contract PublicVault {
     function showBalance() view external returns(uint256){
         return(address(this).balance); 
     }
-
-    function showHashedPassword() view external returns (bytes32){
-        return passwordHash;
-    }
 }

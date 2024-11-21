@@ -127,19 +127,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "showHashedPassword",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -181,11 +168,11 @@
 	},
 	"sources": {
 		"VaultFinal.sol": {
-			"keccak256": "0x438f17c7c1dd59258c91cd5c7eee470dea48f5ea87adbc12bfa4df77ca1aac02",
+			"keccak256": "0x846c9f51bca400953d5650f36047293a6b47f82fc87160b8214e0fffe4d72b2d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d31f6adf4e9de029342339583154cbdccc261034b5618f10380347900b20cad9",
-				"dweb:/ipfs/QmTsm6Hdwc3kjHLUX3CShved8u3gQw6YtG9pHoYVtcx8Tc"
+				"bzz-raw://92425ee988d2a796209b4c8510cbb90739e8e9b3cece9a04863d06319d9cb3d6",
+				"dweb:/ipfs/QmR2gDfiitkpjdPWJwAr25jFYcCnptHe7GNdHh6LUyqiHa"
 			]
 		}
 	},
